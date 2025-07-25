@@ -220,18 +220,14 @@ header .menu a:hover {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background: #e6f0ff;    /* Light blue background */
-  color: #004aad;         /* Blue text */
-  border: 1px solid #004aad;
+  background: #ffffff;      /* White background */
+  color: #004aad;           /* Blue text for visibility */
+  border: 1px solid #004aad; /* Thin blue border */
   border-radius: 30px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .download-btn:hover {
-  background: #d0e6ff;
-}
-
-
-.download-btn:hover {
-  background: #7a756f;    /* Slightly lighter on hover */
+  background: #004aad;      /* Blue background on hover */
+  color: #ffffff;           /* White text on hover */
 }
