@@ -229,9 +229,11 @@ header .menu a:hover {
 .download-btn:hover {
   background: #7a756f;    /* Slightly lighter on hover */
 }
-/* Mobile Styles */
+/* =========================
+   MOBILE RESPONSIVE STYLES
+   ========================= */
 @media (max-width: 768px) {
-  /* Navbar */
+  /* Navbar adjustments */
   header.navbar {
     flex-direction: column;
     height: auto;
@@ -245,10 +247,17 @@ header .menu a:hover {
     justify-content: center;
   }
 
-  /* Hero Section */
-  #page .bottom {
-    grid-template-columns: 1fr; /* Stack content vertically */
+  /* Push hero heading downward so it's visible */
+  #page .top {
+    margin-top: 4rem; /* Increased spacing under fixed navbar */
     text-align: center;
+  }
+
+  /* Hero bottom grid stacks vertically */
+  #page .bottom {
+    grid-template-columns: 1fr; /* Stack elements */
+    text-align: center;
+    margin-top: 2rem;
   }
 
   #page .bottom .left,
@@ -266,23 +275,36 @@ header .menu a:hover {
     font-size: 2rem;
   }
 
-  /* Section Styling */
+  /* Reduce gap between sections */
   .section {
     margin: 2rem 1rem;
     padding: 2rem 1rem;
+  }
+
+  /* Specifically reduce space between Contact and What I Offer */
+  #contact {
+    margin-bottom: 2rem;
+  }
+
+  #offer {
+    margin-top: 2rem;
   }
 }
 
 /* Extra small devices (phones under 480px) */
 @media (max-width: 480px) {
+  /* Adjust name and tagline sizes */
   header .logo-left h2 {
     font-size: 1.2rem;
   }
+
   header .logo-left p {
     font-size: 0.8rem;
   }
+
+  /* Adjust hero heading font size */
   #page .top h1 {
     font-size: 1.5rem;
+    line-height: 1.4;
   }
 }
-
