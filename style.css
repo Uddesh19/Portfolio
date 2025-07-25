@@ -110,11 +110,6 @@ nav a:hover {
     border-radius: 8px;
     display: inline-block;
 }
-    margin-top: 0;
-    background: transparent;
-    border-left: 4px solid #fff;
-    padding-left: 0.7rem;
-}
 .card {
     background: #000;
     border-radius: 8px;
