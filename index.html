@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uddesh Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Profile picture with edit option -->
+                <img id="profilePic" src="myphoto.jpg" alt="Uddesh Singh" class="avatar">
+                <br>
+                <label for="uploadPic" style="cursor:pointer; color:#fff; background:#222; padding:4px 12px; border-radius:6px; font-size:0.95rem; margin-top:8px; display:inline-block;">Edit Photo
+                  <input type="file" id="uploadPic" accept="image/*" style="display:none">
+                </label>
+                <script>
+                  const uploadInput = document.getElementById('uploadPic');
+                  const profilePic = document.getElementById('profilePic');
+                  uploadInput.addEventListener('change', function(e) {
+                    const file = e.target.files[0];
+                    if (file) {
+                      const reader = new FileReader();
+                      reader.onload = function(evt) {
+                        profilePic.src = evt.target.result;
+                      };
+                      reader.readAsDataURL(file);
+                    }
+                  });
+                </script>
+                <h1>Uddesh Singh</h1>
+                <h2>Data Scientist | SQL Developer | AI & ML Enthusiast</h2>
+                <div class="contact-info">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=suddesh00@gmail.com" target="_blank">suddesh00@gmail.com</a> |
+                    <a href="tel:+919695502554">+91-9695502554</a> |
+                    <a href="https://linkedin.com/in/uddesh-singh-aab562295" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#responsibility">Responsibility</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="section">
+            <h3>About Me</h3>
+            <p>Hi! I'm Uddesh Singh, a passionate SQL Developer and Data Scientist with a keen interest in AI, ML, and cloud technologies. I love building intelligent solutions that make a difference, and I'm always eager to learn and take on new challenges.</p>
+        </section>
+        <section id="experience" class="section">
+            <h3>Work Experience</h3>
+            <div class="card">
+                <h4>BONJOUR, NOIDA <span class="duration">May 2025 - Present</span></h4>
+                <p><strong>AI ML & DevOps Intern</strong> (2 Months)</p>
+                <ul>
+                    <li>Deployed ML models on GCP and Azure</li>
+                    <li>Trained and fine-tuned NLP models</li>
+                    <li>Built and integrated AI chatbots</li>
+                    <li>Collaborated on real-time AI solutions</li>
+                </ul>
+                <p><strong>Key Learnings & Achievements:</strong></p>
+                <ul>
+                    <li>Learned end-to-end AI deployment workflows</li>
+                    <li>Hands-on MLOps and cloud experience</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h3>Academic Projects</h3>
+            <div class="card">
+                <h4>Federated Learning-Based Diet Recommendation System <span class="duration">2025</span></h4>
+                <ul>
+                    <li>Developed a privacy-preserving diet recommendation system using Python and Flower federated learning framework</li>
+                    <li>Integrated ML models for personalized dietary suggestions without compromising data privacy</li>
+                    <li>Designed and deployed a scalable, secure, and efficient architecture</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4>Revenue Pulse Dashboard <span class="duration">2024</span></h4>
+                <ul>
+                    <li>Built a dynamic sales dashboard using Power BI, integrating data from Excel and Python</li>
+                    <li>Utilized DAX for advanced measures like YoY growth, sales trends, and forecasting</li>
+                    <li>Designed interactive dashboards, improving report accessibility and usability by 20%</li>
+                </ul>
+            </div>
+        </section>
+        <section id="certifications" class="section">
+            <h3>Professional Certifications & Training</h3>
+            <ul>
+                <li><strong>Big Data Computing</strong> - IIT Kanpur (2024): Hadoop, Spark, Apache Kafka</li>
+                <li><strong>Advance Excel</strong> - Coursera (2025): VLOOKUP, INDEX-MATCH, PivotTables, data validation</li>
+                <li><strong>SQL</strong> - Oracle Academy (2023): SQL programming, database management, optimization</li>
+            </ul>
+        </section>
+        <section id="education" class="section">
+            <h3>Educational Qualification</h3>
+            <table>
+                <tr style="background:#000; color:#fff;">
+                  <th>Qualification</th><th>Institute</th><th>CGPA/%</th><th>Year</th>
+                </tr>
+                <tr><td>MCA</td><td>Galgotias University, Greater Noida</td><td>6.98/10</td><td>2025</td></tr>
+                <tr><td>B.Sc.</td><td>Siddharth University, Siddharth Nagar</td><td>62.00%</td><td>2022</td></tr>
+                <tr><td>XII, CBSE</td><td>Army Public School, Gorakhpur</td><td>67.40%</td><td>2019</td></tr>
+                <tr><td>X, CBSE</td><td>Army Public School, Barrackpore</td><td>8.2/10</td><td>2016</td></tr>
+            </table>
+        </section>
+        <section id="skills" class="section">
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Technical:</strong> Python, SQL, C</li>
+                <li><strong>Tools:</strong> Azure, GCP, Github Actions, Git, MySQL, Power BI, MS Excel, MS Word, MS PowerPoint</li>
+                <li><strong>Soft Skills:</strong> People Management, Excellent Communication</li>
+            </ul>
+        </section>
+        <section id="responsibility" class="section">
+            <h3>Positions of Responsibility</h3>
+            <ul>
+                <li><strong>Volunteer, Galgotias University</strong> (2022-Present): Organized and volunteered for 'CODE KREEDA' event, fostering engagement and collaboration</li>
+            </ul>
+        </section>
+        <section id="activities" class="section">
+            <h3>Extra-Curricular Activities</h3>
+            <ul>
+                <li><strong>National Boxer</strong> (2018): National-level boxer with a record of resilience, discipline, and a winning mindset</li>
+            </ul>
+        </section>
+        <section id="hobbies" class="section">
+            <h3>Hobbies & Interests</h3>
+            <p>Running, Playing Basketball, Volleyball Enthusiast, Calisthenics, Travelling, Hiking, Community Service</p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2025 Uddesh Singh | Designed with ❤️</p>
+            <button id="scrollTopBtn" title="Back to top">↑</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
