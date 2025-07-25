@@ -216,17 +216,18 @@ header .menu a:hover {
 #contact a:hover {
   text-decoration: underline;
 }
-
 .download-btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background: #4a90e2;    /* Bright, professional blue */
-  color: #fff;            /* White text for contrast */
+  background: #e6f0ff;    /* Light blue background */
+  color: #004aad;         /* Blue text */
+  border: 1px solid #004aad;
   border-radius: 30px;
   transition: background 0.3s ease;
 }
 
 .download-btn:hover {
-  background: #357ABD;    /* Slightly darker blue on hover */
+  background: #d0e6ff;
 }
+
