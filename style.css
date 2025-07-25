@@ -249,7 +249,7 @@ header .menu a:hover {
 
   /* Push hero heading downward so it's visible */
   #page .top {
-    margin-top: 4rem; /* Increased spacing under fixed navbar */
+    margin-top: 6rem; /* Increased spacing to fully clear navbar */
     text-align: center;
   }
 
