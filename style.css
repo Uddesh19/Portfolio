@@ -229,3 +229,60 @@ header .menu a:hover {
 .download-btn:hover {
   background: #7a756f;    /* Slightly lighter on hover */
 }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Navbar */
+  header.navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  header .menu {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  /* Hero Section */
+  #page .bottom {
+    grid-template-columns: 1fr; /* Stack content vertically */
+    text-align: center;
+  }
+
+  #page .bottom .left,
+  #page .bottom .middle,
+  #page .bottom .right {
+    grid-column: span 12;
+    margin-bottom: 2rem;
+  }
+
+  #page .bottom .middle img {
+    max-width: 200px;
+  }
+
+  #page .bottom .right h2 {
+    font-size: 2rem;
+  }
+
+  /* Section Styling */
+  .section {
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+  }
+}
+
+/* Extra small devices (phones under 480px) */
+@media (max-width: 480px) {
+  header .logo-left h2 {
+    font-size: 1.2rem;
+  }
+  header .logo-left p {
+    font-size: 0.8rem;
+  }
+  #page .top h1 {
+    font-size: 1.5rem;
+  }
+}
+
