@@ -1,10 +1,5 @@
 // Initialize a new Lenis instance for smooth scrolling
-const lenis = new Lenis({
-  duration: 0.8,   // Lower = faster scroll (default ~1.2)
-  easing: (t) => t // Keep easing linear (optional)
-});
-
-
+const lenis = new Lenis();
 // Listen for the 'scroll' event and log the event data to the console
 lenis.on("scroll", (e) => {
   console.log(e);
