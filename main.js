@@ -1,5 +1,10 @@
 // Initialize a new Lenis instance for smooth scrolling
-const lenis = new Lenis();
+const lenis = new Lenis({
+  duration: 0.6,     // lower value = faster scroll
+  smoothWheel: true, // ensures mouse wheel smoothness
+  smoothTouch: true  // ensures mobile smoothness
+});
+
 // Listen for the 'scroll' event and log the event data to the console
 lenis.on("scroll", (e) => {
   console.log(e);
